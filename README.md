@@ -6,6 +6,13 @@ Send a [Mercure](https://mercure.rocks) publish event. Simple as that.
 
 <hr/>
 
+## Demo
+
+1) Go to https://demo.mercure.rocks, in the **Subscribe** section.
+2) Subscribe for notifications on this *topic* : **`foo`**.
+3) 🌟 Star 🌟 this repo !
+4) Quickly switch to the Mercure demo page to see a notification in your browser.
+
 ## Usage
 
 ```hcl
