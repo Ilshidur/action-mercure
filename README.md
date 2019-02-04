@@ -25,7 +25,7 @@ action "Publish notification" {
 
 **NOTICE :** for stability purposes, it is recommended to use the action with an explicit commit SHA-1 :
 
-`uses = "Ilshidur/action-mercure@1aeb090"` (=> link to the commits list : https://github.com/Ilshidur/action-mercure/commits/master)
+`uses = "Ilshidur/action-mercure@eea8db9"` (=> link to the commits list : https://github.com/Ilshidur/action-mercure/commits/master)
 
 ### Arguments
 
