@@ -2,7 +2,7 @@
 
 Send a [Mercure](https://mercure.rocks) publish event. Simple as that.
 
-TODO: Insert image
+![GitHub Action](action.png "GitHub Action")
 
 <hr/>
 
@@ -18,12 +18,11 @@ action "Publish notification" {
 
 **NOTICE :** for stability purposes, it is recommended to use the action with an explicit commit SHA-1 :
 
-TODO: Insert proper commit SHA-1
-`uses = "Ilshidur/action-mercure@1e77575"` (=> link to the commits list : https://github.com/Ilshidur/action-mercure/commits/master)
+`uses = "Ilshidur/action-mercure@1aeb090"` (=> link to the commits list : https://github.com/Ilshidur/action-mercure/commits/master)
 
 ### Arguments
 
-The argument is TODO:.
+The argument is the content of the event to send. It is **RECOMMENDED** to use JSON.
 
 **Environment variables can be interpolated** in the message using brackets (`{{` and `}}`) :
 
