@@ -1,5 +1,7 @@
 # 🚀 GitHub Action for Mercure
 
+[![GitHubActions](https://img.shields.io/badge/listed%20on-GitHubActions-blue.svg)](https://github-actions.netlify.com/action-mercure)
+
 Send a [Mercure](https://mercure.rocks) publish event. Simple as that.
 
 ![GitHub Action](action.png "GitHub Action")
