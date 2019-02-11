@@ -5,7 +5,7 @@ workflow "Push event" {
 
 action "Publish test" {
   uses = "./"
-  args = "{ \"repo\": \"https://github.com/Ilshidur/action-mercure\", \"action\": \"{{ GITHUB_ACTION }}\", \"description\": \"Please star this project ! :-)\" }"
+  args = "{ \"repo\": \"https://github.com/Ilshidur/action-mercure\", \"action\": \"{{ GITHUB_ACTION }}\", \"description\": \"Thank you for the GitHub STAR ! :-)\" }"
   env = {
     MERCURE_HUB_URL = "https://demo.mercure.rocks/hub"
     MERCURE_TOPICS = "foo"
