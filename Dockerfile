@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:10.15.1
+FROM mhart/alpine-node:10.15.2
 
 LABEL "com.github.actions.name"="GitHub Action for Mercure"
 LABEL "com.github.actions.description"="Send a Mercure publish event."
