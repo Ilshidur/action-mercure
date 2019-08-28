@@ -1,6 +1,7 @@
 # 🚀 GitHub Action for Mercure
 
 [![GitHubActions](https://img.shields.io/badge/listed%20on-GitHubActions-blue.svg)](https://github-actions.netlify.com/action-mercure)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2FIlshidur%2Faction-mercure%2Fbadge&style=flat)](https://actions-badge.atrox.dev/Ilshidur/action-mercure/goto)
 
 Send a [Mercure](https://mercure.rocks) publish event. Simple as that.
 
