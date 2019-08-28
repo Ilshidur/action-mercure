@@ -1,0 +1,19 @@
+name: Push event
+
+on:
+  push:
+
+jobs:
+  build:
+
+     runs-on: ubuntu-latest
+
+     steps:
+    - name: Publish test
+      env:
+        MERCURE_HUB_URL: https://demo.mercure.rocks/hub
+        MERCURE_HUB_JWT: ${{ secrets.MERCURE_HUB_JWT }}
+        MERCURE_TOPICS: foo
+      uses: ./
+      with:
+        args: '{ \"repo\": \"https://github.com/Ilshidur/action-mercure\", \"action\": \"{{ GITHUB_ACTION }}\", \"description\": \"Please star this project ! :-)\" }'
