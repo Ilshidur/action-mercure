@@ -17,6 +17,21 @@ Send a [Mercure](https://mercure.rocks) publish event. Simple as that.
 
 ## Usage
 
+### New YML synthax
+
+ ```yaml
+- name: Publish notification
+  env:
+    MERCURE_HUB_URL: ${{ secrets.MERCURE_HUB_URL }}
+    MERCURE_HUB_JWT: ${{ secrets.MERCURE_HUB_JWT }}
+    MERCURE_TOPICS: topic1,topic2
+  uses: Ilshidur/action-mercure@master
+  with:
+    args: '{ \"hello\": \"world\" }'
+```
+
+ ### (legacy) HCL synthax
+
 ```hcl
 action "Publish notification" {
   uses = "Ilshidur/action-mercure@master"
@@ -27,7 +42,7 @@ action "Publish notification" {
 
 **NOTICE :** for stability purposes, it is recommended to use the action with an explicit commit SHA-1 :
 
-`uses = "Ilshidur/action-mercure@eea8db9"` (=> link to the commits list : https://github.com/Ilshidur/action-mercure/commits/master)
+`uses = "Ilshidur/action-mercure@6265c17"` (=> link to the commits list : https://github.com/Ilshidur/action-mercure/commits/master)
 
 ### Arguments
 
@@ -35,7 +50,7 @@ The argument is the content of the event to send. It is **RECOMMENDED** to use J
 
 **Environment variables can be interpolated** in the message using brackets (`{{` and `}}`) :
 
-e.g.: `args = "{ \"action\": \"{{ GITHUB_ACTION }}\" }"`
+e.g.: `args: "{ \"action\": \"{{ GITHUB_ACTION }}\" }"`
 
 ### Environment variables
 
