@@ -6,9 +6,9 @@ on:
 jobs:
   build:
 
-     runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-     steps:
+    steps:
     - name: Publish test
       env:
         MERCURE_HUB_URL: https://demo.mercure.rocks/hub
