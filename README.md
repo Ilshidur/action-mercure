@@ -18,7 +18,7 @@ Send a [Mercure](https://mercure.rocks) publish event. Simple as that.
 
 ## Usage
 
-### New YML synthax
+### New YML syntax
 
  ```yaml
 - name: Publish notification
@@ -31,7 +31,7 @@ Send a [Mercure](https://mercure.rocks) publish event. Simple as that.
     args: '{ \"hello\": \"world\" }'
 ```
 
- ### (legacy) HCL synthax
+ ### (legacy) HCL syntax
 
 ```hcl
 action "Publish notification" {
