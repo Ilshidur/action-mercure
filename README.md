@@ -7,6 +7,14 @@ Send a [Mercure](https://mercure.rocks) publish event. Simple as that.
 
 ![GitHub Action](action.png "GitHub Action")
 
+## Compatibility note
+
+As this Action is containerized with Docker, [it can only run on Linux environments](https://help.github.com/en/actions/building-actions/about-actions#types-of-actions).
+
+> Docker container actions can only execute in the GitHub-hosted Linux environment.
+
+> Self-hosted runners must use a Linux operating system and have Docker installed to run Docker container actions. For more information about the requirements of self-hosted runners, see "About self-hosted runners."
+
 <hr/>
 
 ## Demo
