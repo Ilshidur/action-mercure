@@ -26,7 +26,7 @@ As this Action is containerized with Docker, [it can only run on Linux environme
 
 ## Usage
 
-### New YML syntax
+### Usage
 
  ```yaml
 - name: Publish notification
@@ -39,19 +39,9 @@ As this Action is containerized with Docker, [it can only run on Linux environme
     args: '{ \"hello\": \"world\" }'
 ```
 
- ### (legacy) HCL syntax
-
-```hcl
-action "Publish notification" {
-  uses = "Ilshidur/action-mercure@master"
-  secrets = ["MERCURE_HUB_URL", "MERCURE_HUB_JWT"]
-  args = "{ \"hello\": \"world\" }"
-}
-```
-
 **NOTICE :** for stability purposes, it is recommended to use the action with an explicit commit SHA-1 :
 
-`uses = "Ilshidur/action-mercure@6265c17"` (=> link to the commits list : https://github.com/Ilshidur/action-mercure/commits/master)
+`uses = "Ilshidur/action-mercure@050a91d"` (=> link to the commits list : https://github.com/Ilshidur/action-mercure/commits/master)
 
 ### Arguments
 
