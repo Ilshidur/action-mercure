@@ -2,6 +2,7 @@ name: Star notification
 
 on:
   watch:
+    types: [started]
 
 jobs:
   build:
