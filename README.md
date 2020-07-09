@@ -26,8 +26,6 @@ As this Action is containerized with Docker, [it can only run on Linux environme
 
 ## Usage
 
-### Usage
-
  ```yaml
 - name: Publish notification
   env:
