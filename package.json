@@ -24,6 +24,6 @@
   "dependencies": {
     "axios": "0.19.2",
     "lodash": "4.17.19",
-    "yargs": "15.4.0"
+    "yargs": "15.4.1"
   }
 }
