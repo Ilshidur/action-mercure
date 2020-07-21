@@ -4,6 +4,7 @@
   "description": "Send a Mercure publish event.",
   "private": true,
   "scripts": {
+    "start": "node -r dotenv/config ./entrypoint \"{{ EVENT_PAYLOAD.commits[0].message }}\"",
     "test": "npm test"
   },
   "repository": {
@@ -25,5 +26,8 @@
     "axios": "0.19.2",
     "lodash": "4.17.19",
     "yargs": "15.4.1"
+  },
+  "devDependencies": {
+    "dotenv": "8.2.0"
   }
 }

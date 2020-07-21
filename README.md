@@ -32,6 +32,8 @@ As this Action is containerized with Docker, [it can only run on Linux environme
     MERCURE_HUB_URL: ${{ secrets.MERCURE_HUB_URL }}
     MERCURE_HUB_JWT: ${{ secrets.MERCURE_HUB_JWT }}
     MERCURE_TOPICS: topic1,topic2
+    MERCURE_TYPE: message
+    MERCURE_PRIVATE: on
   uses: Ilshidur/action-mercure@master
   with:
     args: '{ \"hello\": \"world\" }'
@@ -55,9 +57,15 @@ e.g.: `args: "{ \"action\": \"{{ GITHUB_ACTION }}\" }"`
 
 ### Secrets
 
-* **`MERCURE_HUB_URL`**: the **public** Mercure hub URL (**required**).
-* **`MERCURE_HUB_JWT`**: the publisher JWT (**required**).
+* **`MERCURE_HUB_URL`** **(required)** : the **public** Mercure hub URL.
+* **`MERCURE_HUB_JWT`** **(required)** : the publisher JWT. Keep it safe !
+* **`MERCURE_TYPE`** *(optional)* : The message type to send. Defaults to `"message"`.
+* **`MERCURE_PRIVATE`** *(optional)* : Set this variable with whatever value to make the notification private. The recommended way is to set it to `"on"`.
 * That's all.
+
+## Debugging / testing / development
+
+Developers, all you need is in the [DEVELOPMENT.md](DEVELOPMENT.md) file.
 
 ## License
 
