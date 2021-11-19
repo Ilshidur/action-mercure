@@ -41,7 +41,7 @@ As this Action is containerized with Docker, [it can only run on Linux environme
 
 **NOTICE :** for stability purposes, it is recommended to use the action with an explicit commit SHA-1 :
 
-`uses = "Ilshidur/action-mercure@050a91d"` (=> link to the commits list : https://github.com/Ilshidur/action-mercure/commits/master)
+`uses = "Ilshidur/action-mercure@c80298a8875d00ecc2d1e4cf07e205866251628c"` (=> link to the commits list : https://github.com/Ilshidur/action-mercure/commits/master)
 
 ### Arguments
 
